@@ -1,0 +1,32 @@
+{
+    "name": "stephanecoinon/object-factory",
+    "description": "Create plain PHP objects using Laravel model factories",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephane Coinon",
+            "email": "me@stephanecoinon.co.uk"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.3",
+        "illuminate/database": "~5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3",
+        "orchestra/testbench": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "StephaneCoinon\\ObjectFactory\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/database/factories"
+        ],
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    }
+}
